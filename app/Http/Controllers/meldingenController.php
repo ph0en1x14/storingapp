@@ -4,8 +4,12 @@
 $attractie = $_POST['attractie'];
 $capaciteit = $_POST['capaciteit'];
 $melder = $_POST['melder'];
-$type = $_POST['soort']
+$type = $_POST['type']
+$capaciteit = $_POST['capaciteit'];
+$prioriteit = $_POST['prioriteit']
+
 $overig = $_POST['overige'];
+
 if (isset($_POST['preoriteit']))
 
 
