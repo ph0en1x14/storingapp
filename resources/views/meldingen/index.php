@@ -20,7 +20,7 @@
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         } ?>
 
-        <div style="height: 300px; background: #ededed; display: flex; color: #666666;">
+        <div style="height: 300px; background: #ededed; color: #666666;">
         
         <?php 
         require_once'../../../config/conn.php';
@@ -43,6 +43,14 @@
                 <td><?php echo $melding['type'] ?></td>
                 <td><?php echo $melding['melder'] ?></td>
                 <td><?php echo $melding['overige_info'] ?></td>
+                <td><?php
+                
+                if ($melding['prioriteit']== 1) {
+                    echo "ja";
+                }
+                else {
+                    echo "nee";}
+                 ?></td>
             </tr>
         <?php endforeach; ?>
         </table> 
