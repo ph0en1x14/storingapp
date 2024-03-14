@@ -20,7 +20,7 @@
             echo "<div class='msg'>" . $_GET['msg'] . "</div>";
         } ?>
 
-        <div style="height: 300px; background: #ededed; color: #666666;">
+        <div>
         
         <?php 
         require_once'../../../config/conn.php';
@@ -36,6 +36,7 @@
                 <th>Type</th>
                 <th>Melder</th>
                 <th>Overige</th>
+                <th>Prioriteit</th>
             </tr>
         <?php foreach($meldingen as $melding): ?>
             <tr>
