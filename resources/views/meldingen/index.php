@@ -23,7 +23,7 @@
         <div>
         
         <?php 
-        require_once'../../../config/conn.php';
+        require_once '../../../config/conn.php';
         $query= "SELECT * FROM meldingen";
         $statement=$conn->prepare($query);
         $statement->execute();
