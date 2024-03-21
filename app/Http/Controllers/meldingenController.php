@@ -6,11 +6,11 @@ $type = $_POST['type'];
 $capaciteit = $_POST['capaciteit'];
 if (isset($_POST['prioriteit']))
 {
-    $prioriteit = true;
+    $prioriteit = 1;
 }
 else
 {
-    $prioriteit = false;
+    $prioriteit = 0;
 }
 $melder = $_POST['melder'];
 $overig = $_POST['overig'];

@@ -42,8 +42,6 @@
         //5. Ophalen gegevens, tip: gebruik hier fetch().
         $melding = $statement->fetch(PDO::FETCH_ASSOC);
 
-        print_r($melding);
-        exit
         ?>
 
         <form action="........." method="POST">
@@ -62,17 +60,17 @@
             <div class="form-group">
                 <label for="prioriteit">Prio:</label>
                 <!-- Let op: de checkbox blijft nu altijd uit, pas dit nog aan -->
-                <input type="checkbox" name="prioriteit" id="prioriteit">
+                <input type="checkbox" name="prioriteit" id="prioriteit" <?php  if($melding['prioriteit']) echo 'checked';?>>
                 <label for="prioriteit">Melding met prioriteit</label>
             </div>
             <div class="form-group"> 
                 <label for="melder">Naam melder:</label>
                 <!-- Voeg hieronder nog een value-attribuut toe, zoals bij capaciteit -->
-                <input type="text" name="melder" id="melder" class="form-input">
+                <input type="text" name="melder" id="melder" class="form-input" value="<?php echo $melding['melder']; ?>">
             </div>
             <div class="form-group">
                 <label for="overig">Overige info:</label>
-                <textarea name="overig" id="overig" class="form-input" rows="4">.....</textarea>
+                <textarea name="overig" id="overig" class="form-input" rows="4"><?php echo $melding['overige_info']; ?></textarea>
             </div>
             
             <input type="submit" value="Melding opslaan">
