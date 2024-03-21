@@ -41,6 +41,9 @@
 
         //5. Ophalen gegevens, tip: gebruik hier fetch().
         $melding = $statement->fetch(PDO::FETCH_ASSOC);
+
+        print_r($melding);
+        exit
         ?>
 
         <form action="........." method="POST">

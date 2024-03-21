@@ -36,6 +36,10 @@
                 <label for="melder">Naam melder:</label>
                 <input type="text" name="melder" id="melder" class="form-input">
             </div>
+            <div class="form-group">
+                <label for="overige">overige info</label>
+                <input type="text" name="overige" id="overige" class="form-input">
+            </div>
 
             <input type="submit" value="Verstuur melding">
 
