@@ -38,9 +38,9 @@
                 <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
             </div>
             <div class="form-group">
-                <label for="prioriteit">prioriteit:</label>
-                <input type="checkbox" name="prioriteit" id="prioriteit" class="form-input">
-                <label for="prioriteit">melding met prioriteit</label>
+                <label for="prioriteit">prioriteit: </label>
+                <input type="checkbox" name="prioriteit" id="prioriteit">
+                <label for="prioriteit">melding met prioriteit</label> 
             </div>
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
