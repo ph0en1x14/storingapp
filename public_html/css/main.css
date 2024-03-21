@@ -358,13 +358,13 @@ label{
 }
 
 tr:nth-child(odd){
-  background-color: rgb(88, 148, 76);
+  background-color: #58944c;
 }
 
 tr:first-child {
-  background-color: rgb(205, 255, 209);
+  background-color: #cdffd1;
 }
 
 tr:hover{
-  background-color: rgb(140, 198, 118);
+  background-color: #8cc676;
 }
