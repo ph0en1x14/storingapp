@@ -28,6 +28,7 @@
         $statement=$conn->prepare($query);
         $statement->execute();
         $meldingen=$statement->fetchAll(PDO::FETCH_ASSOC);
+        echo "aantal meldingen:" . count($meldingen);
         ?>
 
         <table>
@@ -42,7 +43,7 @@
         <?php foreach($meldingen as $melding): ?>
             <tr>
                 <td><?php echo $melding['attractie'] ?></td>
-                <td><?php echo $melding['type'] ?></td>
+                <td><?php echo ucfirst($melding['type']) ?></td>
                 <td><?php echo $melding['melder'] ?></td>
                 <td><?php echo $melding['overige_info'] ?></td>
                 <td><?php

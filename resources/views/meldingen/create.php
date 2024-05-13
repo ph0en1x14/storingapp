@@ -16,6 +16,7 @@
 
         <form action="<?php echo $base_url; ?>/app/Http/Controllers/meldingenController.php" method="POST">
 
+            <input type="hidden" name="action" value="create">
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>
                 <input type="text" name="attractie" id="attractie" class="form-input">
@@ -30,7 +31,7 @@
                     <option value="horeca">horeca</option>
                     <option value="show">show</option>
                     <option value="water">water</option>
-                    <option value="overige">overigc</option>
+                    <option value="overige">overige</option>
                 </select>
             </div>
             <div class="form-group">

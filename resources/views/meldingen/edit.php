@@ -44,8 +44,10 @@
 
         ?>
 
-        <form action="........." method="POST">
+        <form action="<?php echo $base_url; ?>/app/Http/Controllers/meldingenController.php" method="POST">
             <!-- (voeg hier opdracht 7 toe) -->
+            <input type="hidden" name="action" value="update">
+            <input type="hidden" name="id" value="<?php echo $id;?>">
 
             <div class="form-group">
                 <label>Naam attractie:</label>
@@ -72,10 +74,14 @@
                 <label for="overig">Overige info:</label>
                 <textarea name="overig" id="overig" class="form-input" rows="4"><?php echo $melding['overige_info']; ?></textarea>
             </div>
-            
             <input type="submit" value="Melding opslaan">
-
+           
         </form>
+        <form action="<?php echo $base_url; ?>/app/Http/Controllers/meldingenController.php" method="POST">
+                <input type="hidden" name="action" value="delete">
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="submit" value="Verwijderen"> 
+            </form>
     </div>  
 
 </body>
